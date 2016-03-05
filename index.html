@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>前端小分队</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div id="content">
+    <h1>前端小分队</h1>
+    <div id="input">
+        <input type="text" class="text" placeholder="前端小分队" />
+       <span>查看</span>
+    </div>
+    <div id="image" class="image">
+        <div class="ige ig1 "></div>
+        <div class="ige ig2"></div>
+        <div class="ige ig3"></div>
+        <div class="ige ig4"></div>
+        <div class="ige ig5"></div>
+    </div>
+</div>
+<script>
+    $("span").click(function(){
+       $("#image").removeClass('image');
+    });
+</script>
+</body>
+</html>

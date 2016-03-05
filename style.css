@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+}
+#content{
+    width:85%;
+    height:100%;
+    margin:auto;
+ 
+    position: absolute;
+    top:50px;
+    left:50px;
+    right:50px;
+    box-shadow:3px 4px 10px gray ;
+}
+h1{
+   display: block;
+   text-align:center;
+    margin-top:50px;
+
+}
+#input{
+    position:relative;
+   width:320px;
+    margin:auto;
+    margin-top:50px;
+    height:52px;
+}
+#input>.text{
+    position:absolute;
+    padding:17px;
+    width:190px;
+    float:left;
+}
+#input>span{
+    position:absolute;
+    right:-3px;
+    display:block;
+    width:80px;
+    height:41px;
+    line-height:40px;
+    padding:6px;
+    text-align: center;
+    background-color: aqua;
+    color:#fff;
+    box-shadow: 1px 2px 5px #000;
+    cursor: pointer;
+}
+#input>span:hover{
+    box-shadow: 0px 0px 5px #000;
+}
+#image{
+    position: absolute;
+    left:220px;
+
+}
+.image{
+    display: none;
+}
+#image>.ige{
+    margin-top:50px;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    display:inline-block;
+    animation:image 2s linear;
+
+
+
+
+}
+#image .ig1{
+    background-image: url("image/kk.jpg");
+    animation:image 2s linear 0s;
+}
+#image .ig2{
+    background-image: url("image/kkk.jpg");
+    animation:image 3s linear 0.5s;
+    -webkit-animation:image 2s linear 0.5s;
+    -moz-animation:image 2s linear 0.5s;
+    -o-animation:image 2s linear 0.5s;
+}
+#image .ig3{
+    background-image: url("image/kkl.jpg");
+    animation:image 2s linear 1s;
+    -webkit-animation:image 2s linear 1s;
+    -moz-animation:image 2s linear 1s;
+    -o-animation:image 2s linear 1s;
+}
+#image .ig4{
+    background-image: url("image/kk.jpg");
+    -webkit-animation:image 2s linear 1.5s;
+    -moz-animation:image 2s linear 1.5s;
+    -o-animation:image 2s linear 1.5s;
+    animation:image 2s linear 1.5s;
+}
+#image .ig5{
+    background-image: url("image/kkl.jpg");
+    -webkit-animation:image 2s linear 2s;
+        -moz-animation:image 2s linear 2s;
+           -o-animation:image 2s linear 2s;
+               animation:image 2s linear 2s;
+}
+@keyframes image {
+    0%{
+       opacity:1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    50%{
+        opacity:0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -o-transform: scale(0);
+    }
+
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        opacity:1;
+    }
+}
+
+
